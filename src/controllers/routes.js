@@ -2,7 +2,7 @@ import axios from "axios";
 import { handleDidsRes } from "../utils/handelCheckingIds.js";
 import { config } from "dotenv";
 
-config({path:"../../.env"})
+config()
 
 const SEND_URL = process.env.SEND_URL;
 

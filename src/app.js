@@ -1,6 +1,9 @@
 import e from "express";
 import cors from "cors"
 import noromboRoutes from "./routes/noromboRoutes.js"
+import { config } from "dotenv";
+
+config()
 
 const app = e();
 const port = process.env.PORT || 4500

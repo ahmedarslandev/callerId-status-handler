@@ -1,7 +1,7 @@
 import axios from "axios";
 import { config } from "dotenv";
 
-config({path:"../../.env"})
+config()
 
 // Configure axios instance for optimization
 const axiosInstance = axios.create({

@@ -2,7 +2,7 @@ import pLimit from "p-limit";
 import { getTitle } from "./checkStatus.js";
 import { config } from "dotenv";
 
-config({path:"../../.env"})
+config()
 
 const limit = pLimit(5); // Limit to 5 concurrent requests
 const MAX_RETRIES = 3; // Maximum number of retries for rate limiting
